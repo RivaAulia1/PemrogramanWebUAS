@@ -1,0 +1,41 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f6f7fb;
+}
+
+.sidebar {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #ff6f91, #845ec2);
+    color: white;
+    padding: 20px;
+}
+
+.sidebar .nav-link {
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.sidebar .nav-link.active,
+.sidebar .nav-link:hover {
+    background-color: rgba(255,255,255,0.3);
+}
+
+.content {
+    padding: 30px;
+}
+
+.content-section {
+    display: none;
+    animation: fade 0.4s ease-in-out;
+}
+
+.content-section.active {
+    display: block;
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
